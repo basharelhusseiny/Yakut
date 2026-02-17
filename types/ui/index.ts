@@ -9,3 +9,9 @@ export type ButtonProps = {
   fullWidth?: boolean;
   className?: string;
 };
+
+export type SectionHeaderProps = {
+  children: React.ReactNode;
+  title: string;
+  description: string;
+};

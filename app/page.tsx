@@ -1,5 +1,17 @@
+import {
+  HeroSection,
+  MissionVisionSection,
+  ServicesSection,
+} from "@/components/pages/home";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <HeroSection />
+      <MissionVisionSection />
+      <ServicesSection />
+    </div>
+  );
 };
 
 export default HomePage;

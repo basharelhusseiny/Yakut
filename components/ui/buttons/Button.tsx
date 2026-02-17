@@ -1,42 +1,62 @@
-import { ButtonProps } from "@/types/ui";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 import Link from "next/link";
+
+// Extend or recreate props interface
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "primary" | "secondary" | "ghost" | "gradient";
+  size?: "sm" | "md" | "lg";
+  href?: string;
+  children: ReactNode;
+  fullWidth?: boolean;
+}
 
 const Button = ({
   variant = "primary",
-  size = "sm",
+  size = "md",
   href,
+  fullWidth = false,
+  className = "",
+  children,
   ...props
 }: ButtonProps) => {
   const baseStyles =
-    "flex justify-center items-center font-semibold rounded-lg transition-all duration-300 cursor-pointer border-2";
+    "inline-flex justify-center items-center font-semibold rounded-xl transition-all duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
     primary:
-      "bg-(--bg-button) border-(--bg-button) text-white hover:bg-[#fbf8f3] hover:text-[#6b4423]",
+      "bg-gradient-to-r from-[#cc0075] to-[#511764] text-white hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] hover:scale-105 shadow-lg border-0",
     secondary:
-      "bg-(--bg-button-hover) border-(--btn-primary-bg) text-(--bg-button) hover:bg-(--btn-primary-bg) hover:text-(--bg-button-hover)",
-    ghost: "bg-transparent border-transparent hover:bg-gray-100",
+      "bg-white/10 backdrop-blur-md text-white border-2 border-white/30 hover:bg-white/20 hover:border-white/50 shadow-lg",
+    ghost:
+      "bg-transparent border-2 border-transparent text-white hover:bg-white/10",
+    gradient:
+      "bg-gradient-to-r from-[#cc0075] to-[#511764] text-white hover:shadow-[0_0_30px_rgba(219,39,119,0.6)] hover:scale-105 shadow-lg border-0",
   };
 
   const sizes = {
-    sm: "px-3 py-1 text-base",
-    md: "px-4 py-1.5 text-lg",
-    lg: "px-6 py-3 text-xl",
+    sm: "px-6 py-2.5 text-sm",
+    md: "px-8 py-4 text-lg",
+    lg: "px-10 py-5 text-xl",
   };
 
-  const className = `${baseStyles} ${variants[variant]} ${sizes[size]} ${
-    props.className || ""
-  }`;
+  const widthClass = fullWidth ? "w-full" : "w-full sm:w-auto";
+
+  // Combine classes, allowing user className to override if needed
+  const combinedClassName = `${baseStyles} ${variants[variant]} ${sizes[size]} ${widthClass} ${className}`;
 
   if (href) {
     return (
-      <Link href={href} className={className}>
-        {props.children}
+      <Link href={href} className={combinedClassName}>
+        {children}
       </Link>
     );
   }
 
-  return <button className={className} {...props} />;
+  return (
+    <button className={combinedClassName} {...props}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
