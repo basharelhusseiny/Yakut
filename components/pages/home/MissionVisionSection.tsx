@@ -42,7 +42,7 @@ const MissionVisionSection = () => {
               <div className="absolute inset-0 bg-linear-to-br from-[#cc0075]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               {/* Background Logo Icon (Gem) */}
-              <div className="absolute -bottom-12 -left-12 text-white/3 group-hover:text-[#cc0075]/10 transition-all duration-700 -rotate-12 transform group-hover:scale-130 group-hover:-rotate-6 pointer-events-none">
+              <div className="absolute -bottom-12 -left-12 text-white/5 group-hover:text-[#cc0075]/10 transition-all duration-700 -rotate-12 transform group-hover:scale-130 group-hover:-rotate-6 pointer-events-none">
                 <Gem strokeWidth={0.5} size={300} />
               </div>
 

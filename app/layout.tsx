@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "@/providers/ScrollToTop";
-import { Header } from "@/components/layout";
+import { Footer, Header } from "@/components/layout";
 
 const cairo = Cairo({
   preload: true,
@@ -28,7 +28,7 @@ export default function RootLayout({
         <ScrollToTop />
         <Header />
         <main className="grow">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
