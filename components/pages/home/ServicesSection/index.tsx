@@ -4,8 +4,9 @@ import { SectionHeader } from "@/components/ui";
 import { SERVICES_DATA } from "@/data";
 import { Sparkles } from "lucide-react";
 import ServiceCard from "./ServiceCard";
+import { SectionProps } from "@/types/constants";
 
-const ServicesSection = () => {
+const ServicesSection = ({ dict }: SectionProps) => {
   return (
     <section
       className="py-10 md:py-14 lg:py-18 relative overflow-hidden bg-slate-950"
@@ -26,8 +27,8 @@ const ServicesSection = () => {
 
       <div className="container mx-auto px-5 relative z-10">
         <SectionHeader
-          title="خدماتنا"
-          description="نقدم مجموعة واسعة من الخدمات لتلبية احتياجات عملائنا الكرام"
+          title={dict.services.title}
+          description={dict.services.description}
         >
           <Sparkles
             className="w-10 h-10 text-[#511764] animate-pulse"

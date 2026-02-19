@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "title": "Welcome to Yakut",
+    "description": "YAKUT Marketing Agency is one of the social media managers organized. We provide social media management, web and search engine development.",
+    "cta": {
+      "start": "Start Now",
+      "knowMore": "Know More"
+    }
+  },
+  "missionVision": {
+    "title": "Our Vision and Mission",
+    "description": "We strive for excellence and leadership in everything we offer to our valued customers"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a wide range of services to meet the needs of our valued customers"
+  }
+}

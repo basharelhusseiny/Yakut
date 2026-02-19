@@ -1,7 +1,8 @@
 import { Button, ShinyText } from "@/components/ui";
 import FloatingLines from "./HeroFloatingLines";
+import { SectionProps } from "@/types/constants";
 
-const HeroSection = () => {
+const HeroSection = async ({ dict }: SectionProps) => {
   return (
     <section className="w-full h-screen relative overflow-hidden bg-linear-to-br from-slate-900 via-purple-900/20 to-slate-900">
       {/* Background - FloatingLines */}
@@ -23,19 +24,14 @@ const HeroSection = () => {
         <div className="container mx-auto px-5 ">
           <div className="max-w-5xl mx-auto text-center">
             {/* Main Title */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
-              مرحباً بك في{" "}
-              <span className="font-bold text-4xl sm:text-6xl md:text-8xl bg-linear-to-r from-[#cc0075] to-[#511764] bg-clip-text text-transparent">
-                YAKUT
-              </span>
+            <h1 className="pb-9 font-bold text-4xl sm:text-6xl md:text-8xl bg-linear-to-r from-[#cc0075] to-[#511764] bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+              {dict.hero.title}
             </h1>
 
             {/* Description */}
             <div className="max-w-4xl mx-auto mb-10 space-y-4">
               <ShinyText
-                text=" وكالة YAKUT للتسويق هي إحدى وسائل التواصل الاجتماعي المديرين
-                التنفيذيين منظمة. نحن نقدم إدارة وسائل التواصل الاجتماعي والويب
-                و تطوير محركات البحث."
+                text={dict.hero.description}
                 speed={2}
                 delay={0}
                 color="#b5b5b5"
@@ -48,11 +44,7 @@ const HeroSection = () => {
                 className="text-lg md:text-3xl font-semibold md:font-bold text-white"
               />
               <p className="mt-4 text-sm sm:text-lg text-gray-200 leading-relaxed drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
-                نصنع ونراقب أفضل وسائل التواصل الاجتماعي. منظمتنا تشرف أنظمة
-                الوسائط الاجتماعية، على سبيل المثال Google، Facebook، Twitter،
-                Instagram وPlus لصالحك. نحن نستخدم وسائل التسويق ذات الصلة عبر
-                وسائل التواصل الاجتماعي والإدارات لتمكين المنظمات من تطوير
-                وتحقيق أهدافهم.
+                {dict.hero.description}
               </p>
             </div>
 
@@ -64,7 +56,7 @@ const HeroSection = () => {
                 fullWidth
                 className="sm:w-auto"
               >
-                ابدأ الآن
+                {dict.hero.cta.start}
               </Button>
               <Button
                 variant="secondary"
@@ -72,7 +64,7 @@ const HeroSection = () => {
                 fullWidth
                 className="sm:w-auto"
               >
-                اعرف المزيد
+                {dict.hero.cta.knowMore}
               </Button>
             </div>
           </div>

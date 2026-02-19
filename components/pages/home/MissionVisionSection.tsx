@@ -4,8 +4,9 @@ import { SectionHeader } from "@/components/ui";
 import { MISSION_VISION_DATA } from "@/data";
 import { Sparkles, Gem, Target } from "lucide-react";
 import { motion } from "framer-motion";
+import { SectionProps } from "@/types/constants";
 
-const MissionVisionSection = () => {
+const MissionVisionSection = ({ dict }: SectionProps) => {
   return (
     <section className="py-10 md:py-14 lg:py-18 relative overflow-hidden bg-slate-950">
       {/* Background Decor - Subtle Gradients */}
@@ -14,8 +15,8 @@ const MissionVisionSection = () => {
 
       <div className="container mx-auto px-5">
         <SectionHeader
-          title="رؤيتنا ورسالتنا"
-          description="نسعى للتميز والريادة في كل ما نقدمه لعملائنا الكرام"
+          title={dict.missionVision.title}
+          description={dict.missionVision.description}
         >
           <Sparkles
             className="w-10 h-10 text-[#511764] animate-pulse"
