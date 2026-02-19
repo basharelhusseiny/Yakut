@@ -67,6 +67,106 @@
       }
     ]
   },
+  "marketingAnalytics": {
+    "title": "Marketing Analytics",
+    "description": "We provide smart solutions including personalized email campaigns, instant auto-response systems",
+    "items": [
+      {
+        "id": 1,
+        "title": "Targeting",
+        "description": "We specialize in targeting customers precisely to ensure increased sales."
+      },
+      {
+        "id": 2,
+        "title": "Reach",
+        "description": "We strive to achieve brand awareness and spread it to the widest possible audience."
+      },
+      {
+        "id": 3,
+        "title": "Price",
+        "description": "We offer the best competitive value in all our advertising campaigns."
+      }
+    ]
+  },
+  "contact_us": {
+    "badge": "Get In Touch",
+    "headline": "We're Here",
+    "headlineAccent": "To Help You",
+    "description": "Have a project in mind? Reach out today and let's build something exceptional together that makes a real difference for your brand.",
+    "stats": [
+      { "value": "200+", "label": "Happy Clients" },
+      { "value": "5+", "label": "Years Experience" },
+      { "value": "24/7", "label": "Support" }
+    ],
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "We'll get back to you within 24 hours",
+      "name": "Full Name",
+      "namePh": "Enter your full name",
+      "email": "Email Address",
+      "emailPh": "example@email.com",
+      "phone": "Phone Number",
+      "phonePh": "+90 5XX XXX XXXX",
+      "subject": "Subject",
+      "subjectOptions": [
+        "Choose a subject",
+        "Digital Marketing",
+        "Graphic Design",
+        "Social Media Management",
+        "SEO Optimization",
+        "Motion Graphics",
+        "General Inquiry"
+      ],
+      "message": "Your Message",
+      "messagePh": "Tell us about your project and what you need...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Sent Successfully! ✓",
+      "error": "Something went wrong, please try again"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "We're always available to answer your questions",
+      "items": [
+        {
+          "label": "Call Us",
+          "value": "+90 (501) 260 26 66",
+          "href": "tel:+905012602666",
+          "hint": "Available 9AM – 6PM"
+        },
+        {
+          "label": "Email Us",
+          "value": "Info@yakut-media.com",
+          "href": "mailto:Info@yakut-media.com",
+          "hint": "We reply within 24 hours"
+        },
+        {
+          "label": "Our Location",
+          "value": "Esenyurt, Istanbul, Turkey",
+          "href": "https://maps.google.com",
+          "hint": "Barbaros Hayrettin Paşa MAH"
+        }
+      ]
+    },
+    "social": {
+      "title": "Follow Us on Social Media",
+      "links": [
+        { "label": "Facebook", "href": "#", "short": "FB" },
+        { "label": "Instagram", "href": "#", "short": "IG" },
+        { "label": "Twitter", "href": "#", "short": "TW" },
+        { "label": "YouTube", "href": "#", "short": "YT" },
+        { "label": "LinkedIn", "href": "#", "short": "LI" }
+      ]
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "items": [
+        { "day": "Monday – Friday", "time": "9:00 AM – 6:00 PM" },
+        { "day": "Saturday", "time": "10:00 AM – 3:00 PM" },
+        { "day": "Sunday", "time": "Closed" }
+      ]
+    }
+  },
   "footer": {
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",

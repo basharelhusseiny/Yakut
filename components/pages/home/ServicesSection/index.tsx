@@ -1,7 +1,7 @@
 "use client";
 
 import { SectionHeader } from "@/components/ui";
-import { Sparkles } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 import { SectionProps } from "@/types/constants";
 
@@ -29,7 +29,7 @@ const ServicesSection = ({ dict, locale = "ar" }: SectionProps) => {
           title={dict.services.title}
           description={dict.services.description}
         >
-          <Sparkles
+          <Briefcase
             className="w-10 h-10 text-[#511764] animate-pulse"
             strokeWidth={2}
           />

@@ -54,7 +54,7 @@ const Footer = ({ dict }: SectionProps) => {
             <p className="text-gray-300 max-w-md">{dict.footer.description}</p>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-4 flex-wrap">
+            <div className="flex items-center gap-3 flex-wrap">
               {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
                 <Link
                   key={label}

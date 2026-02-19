@@ -1,8 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
+import { match as matchLocale } from "@formatjs/intl-localematcher";
 import i18n from "./i18n";
+import Negotiator from "negotiator";
 
-function getLocale() {
-  return i18n.defaultLocale;
+const LOCALE_COOKIE = "NEXT_LOCALE";
+
+function getLocale(request: NextRequest): string {
+  // 1️⃣ Cookie — user's explicit choice, highest priority
+  const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
+  if (cookieLocale && (i18n.locales as string[]).includes(cookieLocale)) {
+    return cookieLocale;
+  }
+
+  // 2️⃣ Accept-Language header — browser preference
+  const negotiatorHeaders: Record<string, string> = {};
+  request.headers.forEach((value, key) => {
+    negotiatorHeaders[key] = value;
+  });
+
+  const locales = [...i18n.locales];
+  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
+
+  try {
+    return matchLocale(languages, locales, i18n.defaultLocale);
+  } catch {
+    return i18n.defaultLocale;
+  }
 }
 
 export default function proxy(request: NextRequest) {
@@ -23,16 +46,33 @@ export default function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const pathnameIsMissingLocale = i18n.locales.every(
-    (locale) => !pathname.startsWith(`/${locale}`),
+  // Check if the pathname already has a valid locale
+  const currentLocale = i18n.locales.find(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
-  if (pathnameIsMissingLocale) {
-    const locale = getLocale();
-    return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
+  if (currentLocale) {
+    // ✅ Has locale in URL — update cookie to persist this choice
+    const response = NextResponse.next();
+    response.cookies.set(LOCALE_COOKIE, currentLocale, {
+      maxAge: 60 * 60 * 24 * 365, // 1 year
+      path: "/",
+      sameSite: "lax",
+    });
+    return response;
   }
 
-  return NextResponse.next();
+  // No locale in URL — redirect using cookie or browser preference
+  const locale = getLocale(request);
+  const response = NextResponse.redirect(
+    new URL(`/${locale}${pathname}`, request.url),
+  );
+  response.cookies.set(LOCALE_COOKIE, locale, {
+    maxAge: 60 * 60 * 24 * 365,
+    path: "/",
+    sameSite: "lax",
+  });
+  return response;
 }
 
 export const config = {
