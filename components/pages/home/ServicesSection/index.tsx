@@ -1,16 +1,15 @@
 "use client";
 
 import { SectionHeader } from "@/components/ui";
-import { SERVICES_DATA } from "@/data";
 import { Sparkles } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 import { SectionProps } from "@/types/constants";
 
-const ServicesSection = ({ dict }: SectionProps) => {
+const ServicesSection = ({ dict, locale = "ar" }: SectionProps) => {
   return (
     <section
       className="py-10 md:py-14 lg:py-18 relative overflow-hidden bg-slate-950"
-      dir="rtl"
+      dir={locale === "ar" ? "rtl" : "ltr"}
     >
       {/* Background Decor */}
       <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-[#cc0075]/20 rounded-full blur-[140px] pointer-events-none" />
@@ -38,7 +37,7 @@ const ServicesSection = ({ dict }: SectionProps) => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {SERVICES_DATA.map((service, index) => (
+          {dict.services.items.map((service, index) => (
             <ServiceCard key={service.id} service={service} index={index} />
           ))}
         </div>

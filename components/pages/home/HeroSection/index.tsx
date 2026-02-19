@@ -8,11 +8,8 @@ const HeroSection = async ({ dict }: SectionProps) => {
       {/* Background - FloatingLines */}
       <FloatingLines
         enabledWaves={["top", "middle", "bottom"]}
-        lineCount={8}
+        lineCount={10}
         lineDistance={20}
-        bendRadius={5}
-        bendStrength={-0.5}
-        interactive={true}
         parallax={true}
       />
 
@@ -44,7 +41,7 @@ const HeroSection = async ({ dict }: SectionProps) => {
                 className="text-lg md:text-3xl font-semibold md:font-bold text-white"
               />
               <p className="mt-4 text-sm sm:text-lg text-gray-200 leading-relaxed drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
-                {dict.hero.description}
+                {dict.hero.sub_description}
               </p>
             </div>
 

@@ -5,8 +5,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { CONTACT_INFO, NAV_LINKS, SOCIAL_LINKS } from "@/constants";
 import { ChevronLeft } from "lucide-react";
+import { SectionProps } from "@/types/constants";
 
-const Footer = () => {
+const Footer = ({ dict }: SectionProps) => {
   const year = new Date().getFullYear();
 
   return (
@@ -50,11 +51,7 @@ const Footer = () => {
             </Link>
 
             {/* Description */}
-            <p className="text-gray-300 max-w-md">
-              وكالة ياقوت للتسويق الرقمي — شريكك الاستراتيجي لصناعة هوية بصرية
-              لا تُنسى، وإدارة حملات تسويقية ذكية تضمن لك النمو والانتشار في
-              السوق الرقمي المتسارع.
-            </p>
+            <p className="text-gray-300 max-w-md">{dict.footer.description}</p>
 
             {/* Social Icons */}
             <div className="flex items-center gap-4 flex-wrap">
@@ -84,7 +81,7 @@ const Footer = () => {
             className="lg:col-start-7 lg:col-span-3 flex flex-col gap-6"
           >
             <h4 className="text-xl font-bold text-white relative pb-4 w-fit">
-              روابط سريعة
+              {dict.footer.quickLinks}
               <span className="absolute bottom-0 right-0 w-1/2 h-1 bg-linear-to-r from-[#cc0075] to-[#511764] rounded-full" />
             </h4>
             <ul className="flex flex-col gap-4">
@@ -99,7 +96,7 @@ const Footer = () => {
                       className="text-[#cc0075] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
                     />
                     <span className="group-hover:-translate-x-1 transition-transform duration-300">
-                      {link.label}
+                      {dict.nav[link.key]}
                     </span>
                   </Link>
                 </li>
@@ -116,7 +113,7 @@ const Footer = () => {
             className="lg:col-span-3 flex flex-col gap-6"
           >
             <h4 className="text-xl font-bold text-white relative pb-4 w-fit">
-              تواصل معنا
+              {dict.footer.contactUs}
               <span className="absolute bottom-0 right-0 w-1/2 h-1 bg-linear-to-r from-[#cc0075] to-[#511764] rounded-full" />
             </h4>
             <ul className="flex flex-col gap-5">
@@ -149,15 +146,16 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
             {/* Copyright */}
             <p className="text-lg order-2 md:order-1 hover:text-gray-300 transition-colors">
-              © {year} <span className="text-[#cc0075]">YAKUT</span>. جميع
-              الحقوق محفوظة.
+              © {year}{" "}
+              <span className="text-[#cc0075]">{dict.footer.brandName}</span>.{" "}
+              {dict.footer.allRightsReserved}
             </p>
 
             {/* Dev credit */}
             <p className="order-1 md:order-2 flex items-center gap-2 group cursor-default text-lg">
-              تم التطوير بواسطة
+              {dict.footer.devBy}
               <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white font-bold text-sm tracking-wider group-hover:bg-[#cc0075]/20 group-hover:border-[#cc0075]/50 group-hover:shadow-[0_0_15px_rgba(204,0,117,0.3)] transition-all duration-300">
-                YAKUT
+                {dict.footer.brandName}
               </span>
             </p>
           </div>

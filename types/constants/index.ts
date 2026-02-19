@@ -1,7 +1,7 @@
 import { Dictionary } from "@/dictionaries";
 
 export type NavLink = {
-  label: string;
+  key: keyof Dictionary["nav"];
   href: string;
 };
 
@@ -21,5 +21,5 @@ export type Locale = "ar" | "en";
 
 export type SectionProps = {
   dict: Dictionary;
-  locale?: string;
+  locale?: Locale;
 };

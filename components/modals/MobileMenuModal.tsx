@@ -5,13 +5,15 @@ import Link from "next/link";
 import { X } from "lucide-react";
 import { NAV_LINKS } from "@/constants";
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
+import { Dictionary } from "@/dictionaries";
 
 interface MobileMenuModalProps {
   isOpen: boolean;
   onClose: () => void;
+  dict: Dictionary;
 }
 
-const MobileMenuModal = ({ isOpen, onClose }: MobileMenuModalProps) => {
+const MobileMenuModal = ({ dict, isOpen, onClose }: MobileMenuModalProps) => {
   useLockBodyScroll(isOpen);
 
   return (
@@ -39,7 +41,7 @@ const MobileMenuModal = ({ isOpen, onClose }: MobileMenuModalProps) => {
             {/* Header */}
             <div className="flex items-center justify-between py-4 px-6 border-b border-white/10">
               <h2 className="text-2xl font-bold bg-linear-to-r from-[#cc0075]  to-[#511764] bg-clip-text text-transparent">
-                القائمة
+                {dict.nav.menuTitle}
               </h2>
               <button
                 onClick={onClose}
@@ -65,7 +67,7 @@ const MobileMenuModal = ({ isOpen, onClose }: MobileMenuModalProps) => {
                     className="block text-white/90 hover:text-white hover:bg-white/5 font-medium text-lg px-4 py-3 rounded-xl transition-all duration-300 group"
                   >
                     <span className="relative">
-                      {link.label}
+                      {dict.nav[link.key]}
                       <span className="absolute -bottom-1 left-0 w-0 h-1 bg-linear-to-r from-[#cc0075] to-[#511764] group-hover:w-full transition-all duration-300" />
                     </span>
                   </Link>

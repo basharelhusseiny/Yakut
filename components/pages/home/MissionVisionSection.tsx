@@ -1,14 +1,16 @@
 "use client";
 
 import { SectionHeader } from "@/components/ui";
-import { MISSION_VISION_DATA } from "@/data";
 import { Sparkles, Gem, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { SectionProps } from "@/types/constants";
 
-const MissionVisionSection = ({ dict }: SectionProps) => {
+const MissionVisionSection = ({ dict, locale = "ar" }: SectionProps) => {
   return (
-    <section className="py-10 md:py-14 lg:py-18 relative overflow-hidden bg-slate-950">
+    <section
+      className="py-10 md:py-14 lg:py-18 relative overflow-hidden bg-slate-950"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       {/* Background Decor - Subtle Gradients */}
       <div className="absolute top-20 right-10 w-[500px] h-[500px] bg-[#cc0075]/20 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-20 left-10 w-[400px] h-[400px] bg-[#511764]/50 rounded-full blur-[100px] animate-pulse delay-1000" />
@@ -25,7 +27,7 @@ const MissionVisionSection = ({ dict }: SectionProps) => {
         </SectionHeader>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
-          {MISSION_VISION_DATA.map((item, index) => (
+          {dict.missionVision.items.map((item, index) => (
             <motion.div
               key={item.key}
               initial={{ opacity: 0, scale: 0.95 }}

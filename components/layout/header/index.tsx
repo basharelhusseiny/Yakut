@@ -6,8 +6,10 @@ import { Menu } from "lucide-react";
 import MobileMenuModal from "@/components/modals/MobileMenuModal";
 import NavLinks from "./NavLinks";
 import Image from "next/image";
+import { SectionProps } from "@/types/constants";
+import LanguageToggle from "./Languagetoggle";
 
-export default function Header() {
+export default function Header({ dict, locale = "ar" }: SectionProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -16,10 +18,7 @@ export default function Header() {
         <nav className="px-6 sm:px-8">
           <div className="flex items-center justify-between h-18">
             {/* Logo */}
-            <Link
-              href="/"
-              className="text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
-            >
+            <Link href={`/${locale}`}>
               <Image
                 src="/logo/yakut-logo-2.png"
                 alt="Logo"
@@ -30,19 +29,20 @@ export default function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <NavLinks />
+            <NavLinks dict={dict} locale={locale} />
 
-            {/* Right Side - CTA Button (Desktop) + Menu Button (Mobile/Tablet) */}
-            <div className="flex items-center gap-3">
-              {/* CTA Button - Hidden on mobile */}
+            {/* Right Side */}
+            <div className="flex items-center sm:gap-3 gap-1">
+              {/* Language Toggle — always visible */}
+              <LanguageToggle locale={locale} />
+
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="hidden md:block px-5 py-2.5 bg-linear-to-r from-[#cc0075] to-[#511764] text-white rounded-full font-semibold text-sm hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] hover:scale-105 transition-all duration-300"
               >
-                تواصل معنا
-              </Link> 
+                {dict.nav.contactCta}
+              </Link>
 
-              {/* Mobile Menu Button - Visible on mobile/tablet */}
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="md:hidden text-white/90 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all duration-300"
@@ -55,10 +55,10 @@ export default function Header() {
         </nav>
       </header>
 
-      {/* Mobile Menu Modal */}
       <MobileMenuModal
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
+        dict={dict}
       />
     </>
   );

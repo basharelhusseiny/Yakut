@@ -17,8 +17,8 @@ const HomePage = async ({
   return (
     <div>
       <HeroSection dict={dict} />
-      <MissionVisionSection dict={dict} />
-      <ServicesSection dict={dict} />
+      <MissionVisionSection dict={dict} locale={locale as Locale} />
+      <ServicesSection dict={dict} locale={locale as Locale} />
     </div>
   );
 };

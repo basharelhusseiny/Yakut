@@ -1,7 +1,15 @@
 {
+  "nav": {
+    "home": "Home",
+    "projects": "Our Work",
+    "contact": "Contact",
+    "contactCta": "Contact Us",
+    "menuTitle": "Menu"
+  },
   "hero": {
     "title": "Welcome to Yakut",
     "description": "YAKUT Marketing Agency is one of the social media managers organized. We provide social media management, web and search engine development.",
+    "sub_description": "We create and manage top social media channels. Our organization oversees social media platforms such as Google, Facebook, Twitter, Instagram, and Google Plus on your behalf. We leverage social media marketing strategies and relevant management practices to help organizations grow and achieve their goals.",
     "cta": {
       "start": "Start Now",
       "knowMore": "Know More"
@@ -9,10 +17,62 @@
   },
   "missionVision": {
     "title": "Our Vision and Mission",
-    "description": "We strive for excellence and leadership in everything we offer to our valued customers"
+    "description": "We strive for excellence and leadership in everything we offer to our valued customers",
+    "items": [
+      {
+        "key": "mission",
+        "title": "Our Mission",
+        "description": "We believe in delivering innovative and effective solutions to build a comprehensive brand, by providing strategies that help our clients achieve tangible growth in their business and reach their marketing goals with precision and efficiency."
+      },
+      {
+        "key": "vision",
+        "title": "Our Vision",
+        "description": "To deliver results-driven brand marketing through programs and PR campaigns that enhance customer awareness, improve their sales, and accelerate their growth."
+      }
+    ]
   },
   "services": {
     "title": "Our Services",
-    "description": "We offer a wide range of services to meet the needs of our valued customers"
+    "description": "We offer a wide range of services to meet the needs of our valued customers",
+    "items": [
+      {
+        "id": 1,
+        "title": "Comprehensive Digital Marketing",
+        "description": "We provide smart solutions including personalized email campaigns, instant auto-response systems, and SMS campaigns to ensure your message reaches your target audience as quickly and efficiently as possible."
+      },
+      {
+        "id": 2,
+        "title": "Search Engine Optimization (SEO)",
+        "description": "We specialize in boosting your website's ranking through effective SEO strategies and paid search ad management, with precise campaign tracking to guarantee top search results and increased traffic."
+      },
+      {
+        "id": 3,
+        "title": "Social Media Management",
+        "description": "We professionally manage all your pages, from creating creative content and instant audience engagement, to competitor analysis and detailed monthly performance reports covering all results and ads."
+      },
+      {
+        "id": 4,
+        "title": "Professional Video Editing",
+        "description": "We have a specialized team in video montage and editing to the highest global quality standards, focusing on integrating modern creative ideas and keeping up with the latest trends to ensure content reach and direct impact."
+      },
+      {
+        "id": 5,
+        "title": "Motion Graphic Production",
+        "description": "Whatever your specialty, we design professional motion graphic videos that explain your idea in a simple and attractive visual style, helping deliver your marketing message in modern and innovative ways that suit all target audiences."
+      },
+      {
+        "id": 6,
+        "title": "Creative Graphic Design",
+        "description": "We provide comprehensive design solutions including visual identities, social media designs, website ads, and print designs to ensure your brand appears with a professional and unified look everywhere."
+      }
+    ]
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "description": "YAKUT Digital Marketing Agency — your strategic partner for building an unforgettable visual identity and running smart marketing campaigns that ensure growth and reach in the fast-paced digital market.",
+    "brandName": "YAKUT",
+    "allRightsReserved": "All rights reserved",
+    "devBy": "Developed by"
   }
 }
