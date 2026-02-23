@@ -1,16 +1,16 @@
 import { Button, ShinyText } from "@/components/ui";
-import FloatingLines from "./HeroFloatingLines";
 import { SectionProps } from "@/types/constants";
+import Image from "next/image";
 
 const HeroSection = async ({ dict }: SectionProps) => {
   return (
     <section className="w-full h-screen relative overflow-hidden bg-linear-to-br from-slate-900 via-purple-900/20 to-slate-900">
       {/* Background - FloatingLines */}
-      <FloatingLines
-        enabledWaves={["top", "middle", "bottom"]}
-        lineCount={10}
-        lineDistance={20}
-        parallax={true}
+      <Image
+        src="/logo/yakut-background.png"
+        alt="Hero Background"
+        fill
+        className="object-cover"
       />
 
       {/* Dark Overlay for better text contrast */}
@@ -21,7 +21,7 @@ const HeroSection = async ({ dict }: SectionProps) => {
         <div className="container mx-auto px-5 ">
           <div className="max-w-5xl mx-auto text-center">
             {/* Main Title */}
-            <h1 className="pb-9 font-bold text-4xl sm:text-6xl md:text-8xl bg-linear-to-r from-[#cc0075] to-[#511764] bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+            <h1 className="pb-9 font-bold text-4xl sm:text-6xl md:text-8xl text-[#cc0075]">
               {dict.hero.title}
             </h1>
 
