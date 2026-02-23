@@ -17,9 +17,17 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const SOCIAL_LINKS = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter, href: "#", label: "Twitter / X" },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/share/1QUzmPbyAw/",
+    label: "Facebook",
+  },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/yakutmedia?igsh=YWN1M3JseDM1MzFk",
+    label: "Instagram",
+  },
+  { icon: Twitter, href: "https://x.com/YakutMedia", label: "Twitter / X" },
   { icon: Youtube, href: "#", label: "YouTube" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
 ];
