@@ -303,7 +303,16 @@
         ]
       }
     ],
-    "clients": "Partners & Clients"
+    "clients": "Partners & Clients",
+    "badge": "About Yaqout Media",
+    "title": "In Yaqout Media",
+    "description": "We build brands and manage their digital presence through strategic planning and creative execution powered by data and AI-driven tools.",
+    "sub_note": "We don't settle for mere publication; we focus on achieving real impact for your brand.",
+    "pillars": [
+      { "label": "Strategic Planning" },
+      { "label": "Value Creation" },
+      { "label": "Measurable Results" }
+    ]
   },
   "footer": {
     "quickLinks": "Quick Links",

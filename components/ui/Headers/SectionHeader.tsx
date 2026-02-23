@@ -16,7 +16,7 @@ const SectionHeader = ({
         </div>
 
         {/* Main heading */}
-        <h2 className="py-2 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-linear-to-r from-[#cc0075] via-[#511764] to-[#cc0075] bg-clip-text text-transparent">
+        <h2 className="py-2 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-linear-to-r from-[#cc0075] via-[#f00c8e] to-[#cc0075] bg-clip-text text-transparent">
           {title}
         </h2>
 

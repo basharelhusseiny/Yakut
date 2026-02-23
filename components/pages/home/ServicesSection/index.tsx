@@ -30,7 +30,7 @@ const ServicesSection = ({ dict, locale = "ar" }: SectionProps) => {
           description={dict.services.description}
         >
           <Briefcase
-            className="w-10 h-10 text-[#511764] animate-pulse"
+            className="w-10 h-10 text-[#be3de9] animate-pulse"
             strokeWidth={2}
           />
         </SectionHeader>

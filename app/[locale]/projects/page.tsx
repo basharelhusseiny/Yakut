@@ -1,4 +1,7 @@
-import SpecializationSection from "@/components/pages/projects/Specializationsection";
+import {
+  ProjectsHero,
+  SpecializationSection,
+} from "@/components/pages/projects";
 import { getDictionary } from "@/dictionaries";
 import { Locale } from "@/types/constants";
 
@@ -10,15 +13,18 @@ const ProjectsPage = async ({
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   return (
-    <div className="py-20 bg-[#020617]">
-      <div className="container mx-auto px-5 flex flex-col gap-10">
-        {dict.projects.specializations.map((spec) => (
-          <SpecializationSection
-            key={spec.title}
-            {...spec}
-            clients={dict.projects.clients}
-          />
-        ))}
+    <div className="pt-32 pb-18 bg-[#020617]">
+      <div className="container mx-auto px-5">
+        <ProjectsHero dict={dict} locale={locale as Locale} />
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
+          {dict.projects.specializations.map((spec) => (
+            <SpecializationSection
+              key={spec.title}
+              {...spec}
+              clients={dict.projects.clients}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

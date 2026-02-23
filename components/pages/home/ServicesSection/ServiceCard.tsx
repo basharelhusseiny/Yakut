@@ -26,7 +26,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
         ease: [0.22, 1, 0.36, 1],
       }}
       whileHover={{ y: -8, transition: { duration: 0.35, ease: "easeOut" } }}
-      className="group relative overflow-hidden rounded-4xl border border-white/10 hover:border-[#cc0075]/40 bg-[#0a0a1a]/80 backdrop-blur-md transition-all duration-500 shadow-xl hover:shadow-[0_24px_64px_-12px_rgba(204,0,117,0.25)] cursor-pointer p-8 flex flex-col gap-6"
+      className="group relative overflow-hidden rounded-4xl border border-white/10 hover:border-[#cc0075]/40 bg-[#0a0a1a]/80 backdrop-blur-md transition-all duration-500 shadow-xl text-center hover:shadow-[0_24px_64px_-12px_rgba(204,0,117,0.25)] cursor-pointer p-8 flex flex-col gap-6"
     >
       {/* ── Ambient background glow (idle) ── */}
       <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[#511764]/20 blur-[80px] group-hover:bg-[#cc0075]/20 transition-colors duration-500 pointer-events-none" />
@@ -38,7 +38,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
       <div className="absolute top-0 left-10 right-10 h-px bg-linear-to-r from-transparent via-[#cc0075]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* ── Icon Container ── */}
-      <div className="relative w-20 h-20 shrink-0">
+      <div className="relative w-20 h-20 shrink-0 mx-auto">
         {/* Glowing backdrop behind icon */}
         <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-[#cc0075]/10 to-[#511764]/10 group-hover:from-[#cc0075]/25 group-hover:to-[#511764]/25 transition-all duration-500" />
         <div className="absolute inset-0 rounded-2xl ring-1 ring-white/10 group-hover:ring-[#cc0075]/40 transition-all duration-500" />
@@ -65,7 +65,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
         </h3>
 
         {/* Accent line — expands on hover */}
-        <div className="w-12 h-[3px] rounded-full bg-linear-to-r from-[#cc0075] to-[#511764] group-hover:w-24 transition-all duration-500 ease-out" />
+        <div className="w-12 mx-auto h-[3px] rounded-full bg-linear-to-r from-[#cc0075] to-[#511764] group-hover:w-24 transition-all duration-500 ease-out" />
 
         {/* Description */}
         <p className="text-base font-semibold text-gray-400 group-hover:text-gray-200 leading-relaxed transition-colors duration-300">
