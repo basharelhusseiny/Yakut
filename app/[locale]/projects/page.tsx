@@ -1,7 +1,5 @@
-import {
-  ProjectsHero,
-  SpecializationSection,
-} from "@/components/pages/projects";
+import ProjectsHero from "@/components/pages/projects/ProjectsHero";
+import SpecializationSection from "@/components/pages/projects/SpecializationSection";
 import { getDictionary } from "@/dictionaries";
 import { Locale } from "@/types/constants";
 
