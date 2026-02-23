@@ -9,7 +9,7 @@ interface Logo {
   alt: string;
 }
 
-interface SpecializationSectionProps {
+interface ProjectsCardProps {
   title: string;
   description?: string;
   logos: Logo[];
@@ -40,14 +40,14 @@ const itemVariants: Variants = {
   },
 };
 
-const SpecializationSection = ({
+const ProjectsCard = ({
   title,
   description,
   logos,
   features,
   features_title,
   clients,
-}: SpecializationSectionProps) => {
+}: ProjectsCardProps) => {
   return (
     <motion.div
       variants={containerVariants}
@@ -206,4 +206,4 @@ const SpecializationSection = ({
   );
 };
 
-export default SpecializationSection;
+export default ProjectsCard;

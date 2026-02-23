@@ -1,5 +1,4 @@
-import ProjectsHero from "@/components/pages/projects/ProjectsHero";
-import SpecializationSection from "@/components/pages/projects/SpecializationSection";
+import { ProjectsCard, ProjectsHero } from "@/components/pages/projects";
 import { getDictionary } from "@/dictionaries";
 import { Locale } from "@/types/constants";
 
@@ -16,7 +15,7 @@ const ProjectsPage = async ({
         <ProjectsHero dict={dict} locale={locale as Locale} />
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
           {dict.projects.specializations.map((spec) => (
-            <SpecializationSection
+            <ProjectsCard
               key={spec.title}
               {...spec}
               clients={dict.projects.clients}
