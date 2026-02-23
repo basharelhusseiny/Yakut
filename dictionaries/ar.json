@@ -160,6 +160,144 @@
       ]
     }
   },
+  "projects": {
+    "specializations": [
+      {
+        "title": "قطاع التعليم والخدمات الطلابية",
+        "description": "نقدم حلولاً تسويقية ذكية للقطاع التعليمي تشمل حملات بريد إلكتروني مخصصة، أنظمة رد آلي فورية، واستراتيجيات جذب فعّالة للطلاب.",
+        "logos": [
+          { "src": "/partners/t3lem-1.png", "alt": "Education Provider 1" },
+          { "src": "/partners/t3lem-2.png", "alt": "Education Provider 2" },
+          { "src": "/partners/t3lem-3.png", "alt": "Education Provider 3" }
+        ],
+        "features_title": "قدّمنا حلولاً تسويقية للقطاع التعليمي ركّزت على:",
+        "features": [
+          "بناء المصداقية",
+          "التواصل مع الجمهور المستهدف",
+          "حملات قبول فعّالة",
+          "محتوى توعوي احترافي"
+        ]
+      },
+      {
+        "title": "قطاع العقارات",
+        "description": "نقدم حلولاً تسويقية متكاملة للقطاع العقاري تركز على بناء الثقة، جذب العملاء المحتملين، وتعزيز المبيعات بشكل مستدام.",
+        "logos": [
+          { "src": "/partners/3krat-1.png", "alt": "Real Estate 1" },
+          { "src": "/partners/3krat-2.png", "alt": "Real Estate 2" },
+          { "src": "/partners/3krat-3.png", "alt": "Real Estate 3" }
+        ],
+        "features_title": "دعمنا العلامات العقارية من خلال:",
+        "features": [
+          "إبراز المشاريع بصريًا",
+          "بناء الثقة الرقمية",
+          "حملات إعلانية موجهة",
+          "محتوى يعكس القيمة الاستثمارية"
+        ]
+      },
+      {
+        "title": "قطاع السياحة العلاجية",
+        "description": "قدّمنا حلول تسويق رقمي متكاملة لشركات السياحة العلاجية، تركّز على بناء الثقة الدولية وجذب المرضى المستهدفين.",
+        "logos": [
+          { "src": "/partners/sya7a-3lagy-1.png", "alt": "Medical Tourism 1" },
+          { "src": "/partners/sya7a-3lagy-2.png", "alt": "Medical Tourism 2" },
+          { "src": "/partners/sya7a-3lagy-3.png", "alt": "Medical Tourism 3" }
+        ],
+        "features_title": "شملت حلولنا في هذا القطاع:",
+        "features": [
+          "بناء الهوية البصرية",
+          "إدارة منصات التواصل الاجتماعي",
+          "تصميم الحملات الإعلانية",
+          "محتوى طبي وتسويقي احترافي"
+        ]
+      },
+      {
+        "title": "قطاع الخدمات والصناعة",
+        "description": "قدّمنا حلول تسويق رقمي متكاملة للشركات الصناعية والخدمية، مع التركيز على إبراز القوة التشغيلية وبناء الثقة.",
+        "logos": [
+          {
+            "src": "/partners/5dmat&sna3a-1.png",
+            "alt": "Services and Industry 1"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-2.png",
+            "alt": "Services and Industry 2"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-3.png",
+            "alt": "Services and Industry 3"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-4.png",
+            "alt": "Services and Industry 4"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-5.png",
+            "alt": "Services and Industry 5"
+          }
+        ],
+        "features_title": "ركّزت استراتيجيتنا في هذا القطاع على:",
+        "features": [
+          "الوضوح",
+          "الاحتراف",
+          "إبراز القوة التشغيلية",
+          "بناء الثقة"
+        ]
+      },
+      {
+        "title": "المنصات والمبادرات المجتمعية",
+        "description": "دعمنا المنصات والمبادرات المجتمعية بحلول تسويقية تعزز التأثير المجتمعي وتضمن استمرارية الرسالة.",
+        "logos": [
+          {
+            "src": "/partners/mnsat-mobdrat-1.png",
+            "alt": "Community Platforms 1"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-2.png",
+            "alt": "Community Platforms 2"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-3.png",
+            "alt": "Community Platforms 3"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-4.png",
+            "alt": "Community Platforms 4"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-5.png",
+            "alt": "Community Platforms 5"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-6.png",
+            "alt": "Community Platforms 6"
+          }
+        ],
+        "features_title": "دعّمنا المبادرات المجتمعية من خلال:",
+        "features": [
+          "بناء الهوية الإعلامية",
+          "إدارة المحتوى التوعوي",
+          "تصميم الحملات المؤثرة",
+          "الحفاظ على روح الرسالة"
+        ]
+      },
+      {
+        "title": "التجارة والملابس",
+        "description": "عملنا مع العلامات التجارية في قطاع الملابس والتجزئة لبناء حضور قوي وزيادة المبيعات عبر استراتيجيات رقمية فعّالة.",
+        "logos": [
+          { "src": "/partners/mlabs-1.png", "alt": "Clothing Brand 1" },
+          { "src": "/partners/mlabs-2.png", "alt": "Clothing Brand 2" }
+        ],
+        "features_title": "ركّز عملنا في هذا القطاع على:",
+        "features": [
+          "بناء الهوية التجارية",
+          "تصميم المحتوى البصري",
+          "إدارة السوشيال ميديا",
+          "حملات مبيعات موجهة"
+        ]
+      }
+    ],
+    "clients": "الشركاء والعملاء"
+  },
   "footer": {
     "quickLinks": "روابط سريعة",
     "contactUs": "تواصل معنا",

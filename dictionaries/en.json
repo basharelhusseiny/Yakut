@@ -167,6 +167,144 @@
       ]
     }
   },
+  "projects": {
+    "specializations": [
+      {
+        "title": "Education & Student Services",
+        "description": "We deliver smart marketing solutions for the education sector, including personalized email campaigns, automated response systems, and effective student acquisition strategies.",
+        "logos": [
+          { "src": "/partners/t3lem-1.png", "alt": "Education Provider 1" },
+          { "src": "/partners/t3lem-2.png", "alt": "Education Provider 2" },
+          { "src": "/partners/t3lem-3.png", "alt": "Education Provider 3" }
+        ],
+        "features_title": "Our education marketing strategies focused on:",
+        "features": [
+          "Building credibility",
+          "Engaging the target audience",
+          "Effective enrollment campaigns",
+          "Professional awareness content"
+        ]
+      },
+      {
+        "title": "Real Estate Sector",
+        "description": "We provide comprehensive marketing solutions for real estate brands, focusing on building trust, generating qualified leads, and driving sustainable sales growth.",
+        "logos": [
+          { "src": "/partners/3krat-1.png", "alt": "Real Estate 1" },
+          { "src": "/partners/3krat-2.png", "alt": "Real Estate 2" },
+          { "src": "/partners/3krat-3.png", "alt": "Real Estate 3" }
+        ],
+        "features_title": "We supported real estate brands through:",
+        "features": [
+          "Showcasing projects visually",
+          "Strengthening digital trust",
+          "Targeted advertising campaigns",
+          "Investment-focused content"
+        ]
+      },
+      {
+        "title": "Medical Tourism",
+        "description": "We developed integrated digital marketing solutions for medical tourism companies, focused on building international trust and attracting qualified patients.",
+        "logos": [
+          { "src": "/partners/sya7a-3lagy-1.png", "alt": "Medical Tourism 1" },
+          { "src": "/partners/sya7a-3lagy-2.png", "alt": "Medical Tourism 2" },
+          { "src": "/partners/sya7a-3lagy-3.png", "alt": "Medical Tourism 3" }
+        ],
+        "features_title": "Our solutions in this sector included:",
+        "features": [
+          "Brand identity development",
+          "Social media management",
+          "Campaign design and execution",
+          "Professional medical & marketing content"
+        ]
+      },
+      {
+        "title": "Services & Industry",
+        "description": "We provided integrated digital marketing solutions for industrial and service companies, highlighting operational strength and building long-term trust.",
+        "logos": [
+          {
+            "src": "/partners/5dmat&sna3a-1.png",
+            "alt": "Services and Industry 1"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-2.png",
+            "alt": "Services and Industry 2"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-3.png",
+            "alt": "Services and Industry 3"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-4.png",
+            "alt": "Services and Industry 4"
+          },
+          {
+            "src": "/partners/5dmat&sna3a-5.png",
+            "alt": "Services and Industry 5"
+          }
+        ],
+        "features_title": "Our strategy in this sector focused on:",
+        "features": [
+          "Clarity",
+          "Professionalism",
+          "Showcasing operational strength",
+          "Building trust"
+        ]
+      },
+      {
+        "title": "Community Platforms & Initiatives",
+        "description": "We empowered community platforms and initiatives with marketing strategies that enhance social impact and maintain message consistency.",
+        "logos": [
+          {
+            "src": "/partners/mnsat-mobdrat-1.png",
+            "alt": "Community Platform 1"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-2.png",
+            "alt": "Community Platform 2"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-3.png",
+            "alt": "Community Platform 3"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-4.png",
+            "alt": "Community Platform 4"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-5.png",
+            "alt": "Community Platform 5"
+          },
+          {
+            "src": "/partners/mnsat-mobdrat-6.png",
+            "alt": "Community Platform 6"
+          }
+        ],
+        "features_title": "We supported community initiatives through:",
+        "features": [
+          "Media identity development",
+          "Educational content management",
+          "Impact-driven campaigns",
+          "Preserving message authenticity"
+        ]
+      },
+      {
+        "title": "Retail & Fashion",
+        "description": "We worked with retail and fashion brands to build strong digital presence and increase sales through performance-driven marketing strategies.",
+        "logos": [
+          { "src": "/partners/mlabs-1.png", "alt": "Clothing Brand 1" },
+          { "src": "/partners/mlabs-2.png", "alt": "Clothing Brand 2" }
+        ],
+        "features_title": "Our focus in this sector included:",
+        "features": [
+          "Brand building",
+          "Visual content creation",
+          "Social media management",
+          "Targeted sales campaigns"
+        ]
+      }
+    ],
+    "clients": "Partners & Clients"
+  },
   "footer": {
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
