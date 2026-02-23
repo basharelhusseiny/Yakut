@@ -8,8 +8,6 @@ import { ChevronLeft } from "lucide-react";
 import { SectionProps } from "@/types/constants";
 
 const Footer = ({ dict }: SectionProps) => {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="relative overflow-hidden bg-[#020617] border-t border-white/5">
       {/* ── Background Effects ── */}
@@ -42,7 +40,7 @@ const Footer = ({ dict }: SectionProps) => {
             {/* Logo */}
             <Link href="/" className="inline-block w-fit">
               <Image
-                src="/logo/yakut-logo-2.png"
+                src="/logo/yakut-main-logo.png"
                 alt="YAKUT"
                 width={140}
                 height={70}
@@ -147,17 +145,12 @@ const Footer = ({ dict }: SectionProps) => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
             {/* Copyright */}
             <p className="text-lg order-2 md:order-1 hover:text-gray-300 transition-colors">
-              © {year}{" "}
-              <span className="text-[#cc0075]">{dict.footer.brandName}</span>.{" "}
               {dict.footer.allRightsReserved}
             </p>
 
             {/* Dev credit */}
             <p className="order-1 md:order-2 flex items-center gap-2 group cursor-default text-lg">
               {dict.footer.devBy}
-              <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white font-bold text-sm tracking-wider group-hover:bg-[#cc0075]/20 group-hover:border-[#cc0075]/50 group-hover:shadow-[0_0_15px_rgba(204,0,117,0.3)] transition-all duration-300">
-                {dict.footer.brandName}
-              </span>
             </p>
           </div>
         </div>

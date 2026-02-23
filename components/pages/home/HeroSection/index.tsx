@@ -21,7 +21,7 @@ const HeroSection = async ({ dict }: SectionProps) => {
         <div className="container mx-auto px-5 ">
           <div className="max-w-5xl mx-auto text-center">
             {/* Main Title */}
-            <h1 className="pb-9 font-bold text-4xl sm:text-6xl md:text-8xl text-[#cc0075]">
+            <h1 className="pb-9 font-bold text-4xl sm:text-5xl md:text-7xl text-[#cc0075]">
               {dict.hero.title}
             </h1>
 
@@ -51,17 +51,11 @@ const HeroSection = async ({ dict }: SectionProps) => {
                 variant="primary"
                 size="md"
                 fullWidth
-                className="sm:w-auto"
+                href="https://wa.me/16085979243"
+                target="_blank"
+                className="sm:w-50 text-xl font-bold"
               >
                 {dict.hero.cta.start}
-              </Button>
-              <Button
-                variant="secondary"
-                size="md"
-                fullWidth
-                className="sm:w-auto"
-              >
-                {dict.hero.cta.knowMore}
               </Button>
             </div>
           </div>

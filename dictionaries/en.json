@@ -7,9 +7,9 @@
     "menuTitle": "Menu"
   },
   "hero": {
-    "title": "Welcome to Yakut",
-    "description": "YAKUT Marketing Agency is one of the social media managers organized. We provide social media management, web and search engine development.",
-    "sub_description": "We create and manage top social media channels. Our organization oversees social media platforms such as Google, Facebook, Twitter, Instagram, and Google Plus on your behalf. We leverage social media marketing strategies and relevant management practices to help organizations grow and achieve their goals.",
+    "title": "Welcome to Yakut Media",
+    "description": "Yakut Media Production & Digital Marketing Agency is a full-service agency specializing in digital platform management and brand identity development through innovative, data-driven marketing solutions",
+    "sub_description": "We provide professional services in Social Media Management, Digital Marketing Strategy, Search Engine Optimization (SEO), Creative Content Production, Advertising Campaign Management. We apply advanced digital marketing strategies to help businesses grow, achieve measurable results, and strengthen their presence in competitive digital markets",
     "cta": {
       "start": "Start Now",
       "knowMore": "Know More"
@@ -22,48 +22,48 @@
       {
         "key": "mission",
         "title": "Our Mission",
-        "description": "We believe in delivering innovative and effective solutions to build a comprehensive brand, by providing strategies that help our clients achieve tangible growth in their business and reach their marketing goals with precision and efficiency."
+        "description": "We are committed to delivering innovative and effective solutions that build strong, cohesive brands. Through strategic planning and creative execution, we empower our clients to achieve sustainable growth and long-term success"
       },
       {
         "key": "vision",
         "title": "Our Vision",
-        "description": "To deliver results-driven brand marketing through programs and PR campaigns that enhance customer awareness, improve their sales, and accelerate their growth."
+        "description": "To become a trusted strategic partner for brands seeking excellence, growth, and impactful digital presence across regional and international markets"
       }
     ]
   },
   "services": {
     "title": "Our Services",
-    "description": "We offer a wide range of services to meet the needs of our valued customers",
+    "description": "We provide comprehensive solutions designed to meet our clients’ evolving needs with precision and professionalism",
     "items": [
       {
         "id": 1,
         "title": "Comprehensive Digital Marketing",
-        "description": "We provide smart solutions including personalized email campaigns, instant auto-response systems, and SMS campaigns to ensure your message reaches your target audience as quickly and efficiently as possible."
+        "description": "We deliver intelligent marketing strategies including email campaigns, automated systems, SMS campaigns, and performance-driven marketing funnels to effectively reach target audiences"
       },
       {
         "id": 2,
         "title": "Search Engine Optimization (SEO)",
-        "description": "We specialize in boosting your website's ranking through effective SEO strategies and paid search ad management, with precise campaign tracking to guarantee top search results and increased traffic."
+        "description": "We improve your website ranking through advanced SEO strategies and manage paid search campaigns to maximize visibility and generate qualified leads"
       },
       {
         "id": 3,
         "title": "Social Media Management",
-        "description": "We professionally manage all your pages, from creating creative content and instant audience engagement, to competitor analysis and detailed monthly performance reports covering all results and ads."
+        "description": "From content creation to performance analysis, we manage your social media presence with structured planning, creative visuals, and detailed monthly reporting"
       },
       {
         "id": 4,
         "title": "Professional Video Editing",
-        "description": "We have a specialized team in video montage and editing to the highest global quality standards, focusing on integrating modern creative ideas and keeping up with the latest trends to ensure content reach and direct impact."
+        "description": "Our specialized team produces high-quality video content aligned with modern trends to ensure maximum engagement and reach"
       },
       {
         "id": 5,
         "title": "Motion Graphic Production",
-        "description": "Whatever your specialty, we design professional motion graphic videos that explain your idea in a simple and attractive visual style, helping deliver your marketing message in modern and innovative ways that suit all target audiences."
+        "description": "We create compelling motion graphics videos that communicate your message clearly and creatively, enhancing brand impact"
       },
       {
         "id": 6,
         "title": "Creative Graphic Design",
-        "description": "We provide comprehensive design solutions including visual identities, social media designs, website ads, and print designs to ensure your brand appears with a professional and unified look everywhere."
+        "description": "We design cohesive brand identities, digital ads, social media creatives, and print materials that reflect professionalism and consistency"
       }
     ]
   },
@@ -177,12 +177,12 @@
           { "src": "/partners/t3lem-2.png", "alt": "Education Provider 2" },
           { "src": "/partners/t3lem-3.png", "alt": "Education Provider 3" }
         ],
-        "features_title": "Our education marketing strategies focused on:",
+        "features_title": "We deliver smart marketing solutions tailored for educational institutions and student service providers, including:",
         "features": [
-          "Building credibility",
-          "Engaging the target audience",
-          "Effective enrollment campaigns",
-          "Professional awareness content"
+          "Targeted student acquisition campaigns",
+          "Automated response systems",
+          "Email marketing funnels",
+          "Lead generation strategies"
         ]
       },
       {
@@ -193,12 +193,12 @@
           { "src": "/partners/3krat-2.png", "alt": "Real Estate 2" },
           { "src": "/partners/3krat-3.png", "alt": "Real Estate 3" }
         ],
-        "features_title": "We supported real estate brands through:",
+        "features_title": "We provide integrated digital marketing solutions for real estate companies focused on:",
         "features": [
-          "Showcasing projects visually",
-          "Strengthening digital trust",
-          "Targeted advertising campaigns",
-          "Investment-focused content"
+          "Building digital trust",
+          "Lead generation and sales growth",
+          "Project positioning and brand visibility",
+          "Paid advertising management"
         ]
       },
       {
@@ -209,12 +209,12 @@
           { "src": "/partners/sya7a-3lagy-2.png", "alt": "Medical Tourism 2" },
           { "src": "/partners/sya7a-3lagy-3.png", "alt": "Medical Tourism 3" }
         ],
-        "features_title": "Our solutions in this sector included:",
+        "features_title": "We have delivered comprehensive marketing strategies for medical tourism companies, with focus on:",
         "features": [
-          "Brand identity development",
-          "Social media management",
-          "Campaign design and execution",
-          "Professional medical & marketing content"
+          "International patient acquisition",
+          "Trust-building content",
+          "Professional medical branding",
+          "Performance-driven ad campaigns"
         ]
       },
       {
@@ -242,11 +242,11 @@
             "alt": "Services and Industry 5"
           }
         ],
-        "features_title": "Our strategy in this sector focused on:",
+        "features_title": "For industrial and service-based businesses, we focus on:",
         "features": [
-          "Clarity",
-          "Professionalism",
-          "Showcasing operational strength",
+          "Clear and professional brand positioning",
+          "Operational strength representation",
+          "Value-driven content strategies",
           "Building trust"
         ]
       },
@@ -279,12 +279,12 @@
             "alt": "Community Platform 6"
           }
         ],
-        "features_title": "We supported community initiatives through:",
+        "features_title": "We support social initiatives and community platforms through:",
         "features": [
           "Media identity development",
-          "Educational content management",
-          "Impact-driven campaigns",
-          "Preserving message authenticity"
+          "Awareness campaigns",
+          "Content management and impact storytelling",
+          "Strategic digital growth"
         ]
       },
       {
@@ -294,23 +294,23 @@
           { "src": "/partners/mlabs-1.png", "alt": "Clothing Brand 1" },
           { "src": "/partners/mlabs-2.png", "alt": "Clothing Brand 2" }
         ],
-        "features_title": "Our focus in this sector included:",
+        "features_title": "We work with retail and fashion brands to build strong digital presence and increase sales through:",
         "features": [
-          "Brand building",
-          "Visual content creation",
+          "Brand identity development",
+          "Creative visual content",
           "Social media management",
-          "Targeted sales campaigns"
+          "Performance marketing campaigns"
         ]
       }
     ],
     "clients": "Partners & Clients",
     "badge": "About Yaqout Media",
-    "title": "In Yaqout Media",
-    "description": "We build brands and manage their digital presence through strategic planning and creative execution powered by data and AI-driven tools.",
-    "sub_note": "We don't settle for mere publication; we focus on achieving real impact for your brand.",
+    "title": "Building Brands Across Multiple Industries",
+    "description": "At Yakut Media, we specialize in building strong digital brands and managing strategic online presence through data-driven marketing and AI-powered execution",
+    "sub_note": "We don’t just publish content — we create measurable impact and sustainable growth",
     "pillars": [
-      { "label": "Strategic Planning" },
       { "label": "Value Creation" },
+      { "label": "Strategic Planning" },
       { "label": "Measurable Results" }
     ]
   },
@@ -318,8 +318,7 @@
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "description": "YAKUT Digital Marketing Agency — your strategic partner for building an unforgettable visual identity and running smart marketing campaigns that ensure growth and reach in the fast-paced digital market.",
-    "brandName": "YAKUT",
-    "allRightsReserved": "All rights reserved",
-    "devBy": "Developed by"
+    "allRightsReserved": "© 2026 Yakut Media – All Rights Reserved",
+    "devBy": "Developed by Yakut Media"
   }
 }

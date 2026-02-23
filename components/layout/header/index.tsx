@@ -20,7 +20,7 @@ export default function Header({ dict, locale = "ar" }: SectionProps) {
             {/* Logo */}
             <Link href={`/${locale}`}>
               <Image
-                src="/logo/yakut-logo-2.png"
+                src="/logo/yakut-main-logo.png"
                 alt="Logo"
                 width={100}
                 height={100}
@@ -37,7 +37,8 @@ export default function Header({ dict, locale = "ar" }: SectionProps) {
               <LanguageToggle locale={locale} />
 
               <Link
-                href={`/${locale}/contact`}
+                href="https://wa.me/16085979243"
+                target="_blank"
                 className="hidden md:block px-5 py-2.5 bg-linear-to-r from-[#cc0075] to-[#511764] text-white rounded-full font-semibold text-sm hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] hover:scale-105 transition-all duration-300"
               >
                 {dict.nav.contactCta}

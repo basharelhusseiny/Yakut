@@ -8,6 +8,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
   children: ReactNode;
   fullWidth?: boolean;
+  target?: string;
 }
 
 const Button = ({
@@ -17,6 +18,7 @@ const Button = ({
   fullWidth = false,
   className = "",
   children,
+  target,
   ...props
 }: ButtonProps) => {
   const baseStyles =
@@ -46,7 +48,7 @@ const Button = ({
 
   if (href) {
     return (
-      <Link href={href} className={combinedClassName}>
+      <Link href={href} className={combinedClassName} target={target}>
         {children}
       </Link>
     );

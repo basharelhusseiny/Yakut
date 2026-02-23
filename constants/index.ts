@@ -33,7 +33,7 @@ export const SOCIAL_LINKS = [
 ];
 
 export const CONTACT_INFO = [
-  { icon: Phone, text: "+90 (501) 260 26 66", href: "tel:+905012602666" },
+  { icon: Phone, text: "+1 (608) 597-9243", href: "tel:+16085979243" },
   {
     icon: Mail,
     text: "Info@yakut-media.com",
