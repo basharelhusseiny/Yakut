@@ -93,9 +93,7 @@ const ProjectsHero = ({ dict, locale = "ar" }: SectionProps) => {
             <div className="flex items-start gap-4">
               <div className="w-1.5 min-h-12 rounded-full bg-linear-to-b from-[#cc0075] to-[#511764] shrink-0 mt-1" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
-                <span className="bg-linear-to-l from-[#cc0075] via-[#e040a0] to-[#bf34ed] bg-clip-text text-transparent">
-                  {dict.projects.title}
-                </span>
+                <span className="text-[#cc0075]">{dict.projects.title}</span>
               </h2>
             </div>
 
