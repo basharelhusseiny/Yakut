@@ -16,7 +16,7 @@ export default function Header({ dict, locale = "ar" }: SectionProps) {
     <>
       <header className="fixed w-[90%] max-w-6xl top-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-full shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
         <nav className="px-6 sm:px-8">
-          <div className="flex flex-row-reverse items-center justify-between h-18">
+          <div className="flex flex-row-reverse md:flex-row items-center justify-between h-18">
             {/* Logo */}
             <Link href={`/${locale}`}>
               <Image
@@ -32,7 +32,7 @@ export default function Header({ dict, locale = "ar" }: SectionProps) {
             <NavLinks dict={dict} locale={locale} />
 
             {/* Right Side */}
-            <div className="flex flex-row-reverse items-center sm:gap-3 gap-1">
+            <div className="flex flex-row-reverse md:flex-row items-center sm:gap-3 gap-1">
               {/* Language Toggle — always visible */}
               <LanguageToggle locale={locale} />
 
