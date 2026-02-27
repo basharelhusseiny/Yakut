@@ -127,6 +127,7 @@
     "info": {
       "title": "معلومات التواصل",
       "subtitle": "نحن دائماً متاحون للإجابة على استفساراتك",
+      "email": "yakutdigital@gmail.com",
       "items": [
         {
           "label": "اتصل بنا",
@@ -136,7 +137,7 @@
         },
         {
           "label": "راسلنا",
-          "value": "Info@yakut-media.com",
+          "value": "Info@yakutmedia.com",
           "href": "mailto:Info@yakut-media.com",
           "hint": "نرد خلال 24 ساعة"
         },

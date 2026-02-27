@@ -128,9 +128,16 @@ const Footer = ({ dict }: SectionProps) => {
                         className="text-[#cc0075] group-hover:text-white transition-colors duration-300"
                       />
                     </span>
-                    <span className="group-hover:translate-x-[-4px] transition-transform duration-300">
-                      {text}
-                    </span>
+                    <div className="flex flex-col gap-1">
+                      <span className="group-hover:translate-x-[-4px] transition-transform duration-300">
+                        {text}
+                      </span>
+                      {text === "Info@yakutmedia.com" && (
+                        <span className="group-hover:translate-x-[-4px] transition-transform duration-300">
+                          yakutdigital@gmail.com
+                        </span>
+                      )}
+                    </div>
                   </Link>
                 </li>
               ))}

@@ -36,8 +36,8 @@ export const CONTACT_INFO = [
   { icon: Phone, text: "+1 (608) 597-9243", href: "tel:+16085979243" },
   {
     icon: Mail,
-    text: "Info@yakut-media.com",
-    href: "mailto:Info@yakut-media.com",
+    text: "Info@yakutmedia.com",
+    href: "mailto:Info@yakutmedia.com",
   },
   {
     icon: MapPin,

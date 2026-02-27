@@ -127,16 +127,17 @@
     "info": {
       "title": "Contact Information",
       "subtitle": "We're always available to answer your questions",
+      "email": "yakutdigital@gmail.com",
       "items": [
         {
           "label": "Call Us",
-          "value": "+90 (501) 260 26 66",
-          "href": "tel:+905012602666",
+          "value": "+1 (608) 597-9243",
+          "href": "tel:+16085979243",
           "hint": "Available 9AM – 6PM"
         },
         {
           "label": "Email Us",
-          "value": "Info@yakut-media.com",
+          "value": "Info@yakutmedia.com",
           "href": "mailto:Info@yakut-media.com",
           "hint": "We reply within 24 hours"
         },

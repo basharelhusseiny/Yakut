@@ -31,6 +31,7 @@ const ContactInfoPanel = ({ dict, locale }: SectionProps) => {
       {/* Info cards */}
       {dict.contact_us.info.items.map(({ label, value, href, hint }, i) => {
         const Icon = ICONS[i];
+        console.log(label);
         return (
           <motion.div
             key={label}
@@ -77,6 +78,13 @@ const ContactInfoPanel = ({ dict, locale }: SectionProps) => {
                 <p className="text-white font-semibold truncate group-hover:text-[#ff9cd6] transition-colors duration-300">
                   {value}
                 </p>
+
+                {value === "Info@yakutmedia.com" && (
+                  <p className="text-white font-semibold truncate group-hover:text-[#ff9cd6] transition-colors duration-300">
+                    {dict.contact_us.info.email}
+                  </p>
+                )}
+
                 <p className="text-slate-500 text-sm mt-0.5">{hint}</p>
               </div>
 
